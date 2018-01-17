@@ -5,6 +5,13 @@ jdk:
 notifications:
   email:
     recipients:
-      - one@example.com
+    - one@example.com
     on_success: always
     on_failure: always
+deploy:
+  provider: heroku
+  api_key:
+    secure: Pk/BJtyy189DGQFQ/wDeQZhaaNh/5n+qG7W7Rh+JVReZ3FCaitH5AW4nxtY0BEn0M19mxT5lCB7KCRLcXKAgfdoVM7SeVy94uYi39IsTTGd5P3Dj3d11sK4cBg5twr+xzdwSFJxaqPOpmqeXZpsi6LY0zN8EjGHdl1YGE2hfYav0EezZeH0Nn4xNu1ZkJ9pkymq88Ri2iYC0yrSzE+wLyNRBKtnxWf/4Mwf1iOSTN9jvm7HIskw3GfMKg+qNr1k5eWbAHY8Si+V4FjavtJ3qWqGEDNYVQXWhljMnST3kD2TaPlJYtflHczL1AfOV0pM/vPmwnX5wEK1OFmf6/T7hSsJZfdvxJX9rCQ0n9nrQatOpJKoZCM3WWk0WFoUdinfxLWc8cqy/H45rvlxqJhhFhSzKUi8VG1tOnp119GUwi0HuaGPxd7YF8fPAQFcMgI4LEpR29a9AN1WXfEu7FEFnpnzqyOowbDr58EBuA1anWu+aEFUJwNeNnuPTy44SjLzNQ6Ci3AcpB1QEF7NeGwcVM3LGTFo2jKVFW7MzShCp0Crm23Opqr4FNA/zMNQ3nNJDNREjq7YNOz7+I66wayxymebVfk5BpyRF76dwwOve4FeW9dYMU+KGfsYBtAUEtlBP+RWuS6DaJ+9m5MxmhS8WO+C+XEcyMzon7XH3rSRRUQ0=
+  app: greetingjavajavrombay
+  on:
+    repo: javrombay/greeting-java
